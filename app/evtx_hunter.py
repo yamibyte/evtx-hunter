@@ -1,12 +1,8 @@
 import argparse
 import os
 import vars
-import dash
 from helpers.evtx_loader import EvtxLoader
 from helpers import utils
-from graphing import table, histogram
-import dash_html_components as html
-import dash_core_components as dcc
 from datetime import date, datetime
 
 
