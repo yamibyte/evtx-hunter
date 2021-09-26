@@ -3,3 +3,4 @@ numpy
 matplotlib
 jsonlines~=2.0.0
 pygame
+mypy

@@ -2,8 +2,8 @@ import os
 import glob
 import logging
 import jsonlines
-import vars
 import json
+import vars
 import pandas as pd
 
 
@@ -103,7 +103,7 @@ def get_all_event_channels():
 def get_recursive_filenames(path, file_suffix):
     filenames = list()
 
-    for subdir, dirs, files in os.walk(path):
+    for subdir, _, files in os.walk(path):
         for file in files:
             filename = os.path.join(subdir, file)
             if filename.endswith(file_suffix):
